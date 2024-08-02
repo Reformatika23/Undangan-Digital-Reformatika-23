@@ -415,7 +415,7 @@ body {
     .timeline li .timeline-panel {
         width: 60%;
         /* transform: translateX(-10px); */
-        transform: translatey(-30px);
+        transform: translateY(-30px);
     }
     .gallery {
         background-color: #f5f5f5;
