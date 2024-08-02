@@ -79,7 +79,7 @@ body {
     text-transform: uppercase;
 }
 
-echo "# form-reformatika23">>README.md .home {
+.home {
     background-color: rgb(179, 179, 179);
     background-size: cover;
     max-height: 100vh;
@@ -405,7 +405,7 @@ echo "# form-reformatika23">>README.md .home {
         font-size: 60%;
     }
     .simply-countdown>.simply-section {
-        padding: 45px;
+        padding: 30px;
         margin: 3px;
     }
     .timeline li .timeline-image {
