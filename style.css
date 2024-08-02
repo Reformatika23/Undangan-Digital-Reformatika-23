@@ -413,8 +413,8 @@ body {
         height: 80px;
     }
     .timeline li .timeline-panel {
-        width: 65%;
-        transform: translateX(-20px);
+        width: 60%;
+        transform: translateX(-10px);
     }
     .gallery {
         background-color: #f5f5f5;
