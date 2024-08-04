@@ -77,7 +77,7 @@ body {
     width: auto !important; /* Ambil seluruh lebar kolom kedua */
     max-width: 100%; /* Pastikan tidak ada batasan lebar maksimum */
     color: black;
-    background-color: rgba(255, 255, 255, .8);
+    background-color: rgb(255, 255, 255);
 }
 .offcanvas-end.show {
     display: block; /* Tampilkan offcanvas saat dibuka */
@@ -380,13 +380,6 @@ body {
     .simply-countdown>.simply-section {
         padding: 50px;
     }
-    .container-main.offcanvas-open {
-        grid-template-columns: 1fr 100%;
-    }
-    .offcanvas-end{
-        min-height: 100vh;
-        display: none;
-    }
     .timeline li .timeline-image {
         left: 15px;
         margin-left: 45px;
@@ -420,6 +413,13 @@ body {
     .simply-countdown>.simply-section {
         padding: 40px;
         margin: 5px;
+    }
+    .container-main.offcanvas-open {
+        grid-template-columns: 1fr 100%;
+    }
+    .offcanvas-end{
+        min-height: 100vh;
+        display: none;
     }
     .mynavbar .nav-link {
         font-size: 1.3rem;
