@@ -60,29 +60,47 @@ body {
 }
 
 .mynavbar {
-    background-color: rgba(0, 0, 0, 0.8) !important;
+    background-color: rgba(255, 255, 255, .8) !important;
     backdrop-filter: blur(4px);
 }
 
-.mynavbar button span {
-    color: white;
+.container-main {
+    display: grid;
+    grid-template-columns: 1fr; /* Satu kolom saat offcanvas ditutup */
+    transition: grid-template-columns 0.3s ease;
 }
-    
-.mynavbar .offcanvas {
-    min-height: 100vh;
-    background-color: rgb(0, 0, 0);
+.container-main.offcanvas-open {
+    grid-template-columns: 1fr 30%; /* Dua kolom saat offcanvas dibuka, 30% untuk offcanvas */
+}
+.offcanvas-end {
+    grid-column: 2; /* Tempatkan offcanvas di kolom kedua */
+    width: 100%; /* Ambil seluruh lebar kolom kedua */
+    max-width: 100%; /* Pastikan tidak ada batasan lebar maksimum */
+}
+.offcanvas-end.show {
+    display: block; /* Tampilkan offcanvas saat dibuka */
+}
+
+.offcanvas-end {
+    color: black;
+    background-color: rgba(255, 255, 255, .8);
+    width: auto !important;
+    height: auto !important;
+    visibility: visible !important;
+    /* z-index: auto;
+    flex-grow: 1; */
 }
 
 .mynavbar .navbar-brand,
 .mynavbar .offcanvas-titel {
-    color: white;
+    color: black;
     font-family: "Montserrat", sans-serif;
     font-size: 1.4rem;
     font-weight: bolder;
 }
 
 .mynavbar .nav-link {
-    color: white;
+    color: black;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -354,6 +372,7 @@ body {
     object-fit: cover;
 }
 
+/* --#{$prefix}navbar-color: #{$navbar-light-color}; */
 
 /* Media Query */
 
@@ -366,6 +385,13 @@ body {
     }
     .simply-countdown>.simply-section {
         padding: 50px;
+    }
+    .container-main.offcanvas-open {
+        grid-template-columns: 1fr 100%; /* Atur kolom kedua untuk layar kecil */
+    }
+    .offcanvas-end{
+        min-height: 100vh;
+        display: none;
     }
     .timeline li .timeline-image {
         left: 15px;
