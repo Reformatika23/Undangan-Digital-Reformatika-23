@@ -1,8 +1,8 @@
 .simply-countdown {
     overflow: hidden;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(.5rem, 1fr));
-    gap: .1rem;
+    display: table;
+    /* grid-template-columns: repeat(auto-fit, minmax(.1rem, 1fr)); */
+    /* gap: .1rem; */
     font-family: 'Arial', sans-serif;
     justify-content: center;
     margin: auto;

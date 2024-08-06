@@ -129,8 +129,8 @@ body {
 .home .flex-container .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-    gap: 5rem;
-    margin: 4rem;
+    gap: 3rem;
+    margin: 2rem;
     justify-content: center;
 }
 .box-container .box {
@@ -419,6 +419,9 @@ body {
     .simply-countdown>.simply-section {
         padding: 60px;
     }
+    /* .box-container {
+        scale: 90%;
+    } */
     .container-main.offcanvas-open {
         grid-template-columns: 1fr 100%;
     }
@@ -460,6 +463,9 @@ body {
         padding: 50px;
         margin: 5px;
     }
+    /* .box-container {
+        scale: 80%;
+    } */
     .mynavbar .nav-link {
         font-size: 1.3rem;
     }
@@ -481,11 +487,25 @@ body {
     html {
         font-size: 65%;
     }
-    .simply-countdown>.simply-section {
-        scale: 70%;
-        padding: 40px;
-        margin: 0;
+    .hero h2 {
+        line-height: 2rem;
     }
+    .hero h1 {
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    .simply-countdown {
+        /* margin-top: 50px; */
+        margin-bottom: 50px;
+    }
+    .simply-countdown>.simply-section {
+        /* scale: 80%; */
+        padding: 30px;
+        margin: 3px;
+    }
+    /* .box-container {
+        scale: 70%;
+    } */
     .mynavbar .nav-link {
         font-size: 1.2rem;
     }
