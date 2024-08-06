@@ -21,6 +21,7 @@
 
     <link rel="stylesheet" href="style.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -45,7 +46,7 @@
                 </button>
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Reformatika 2023</h5>
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Reformatika 23</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
@@ -65,7 +66,7 @@
                 <div class="row justify-content-center">
                     <div class="col-md-8 text-center">
                         <h2>Reformatika 2023</h2>
-                        <h3>Diselenggarakan pada tanggal 9 Agustus 2023 Makassar, Sulawesi Selatan</h3>
+                        <h3>Diselenggarakan pada tanggal 9 Agustus 2024 Makassar, Sulawesi Selatan</h3>
                         <p>Oleh karena itu, dengan segala hormat, kami bermaksud untuk mengundang Bapak/Ibu, Saudara/i, untuk hadir pada acara Reformatika kami.
                         </p>
                     </div>
@@ -148,9 +149,9 @@
                     </div>
                 </div>
                 
-                <div class="row justify-content-center mt-4 ">
+                <div class="row justify-content-center mt-1 ">
                     <div class="col-md-5 col-10">
-                        <div class="card text-center text-bg-light mt-4">
+                        <div class="card text-center text-bg-light mt-1">
                             <div class="card-header">Reformatika 2023</div>
                             <div class="card-body">
                                 <div class="row justify-content-center">
@@ -520,6 +521,17 @@
 
 
         disableScroll();
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const boxContainer = document.querySelector('.box-container');
+            const boxes = boxContainer.querySelectorAll('.box');
+            const colCount = boxes.length;
+
+            // Add class based on column count
+            boxContainer.classList.add(`col-count-${colCount}`);
+        });
     </script>
 </body>
 
