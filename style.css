@@ -102,6 +102,9 @@ body {
 
 .home {
     background-image: url(bg-home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     height: auto;
     margin-top: -4rem;
     padding-top: 10rem;
@@ -129,9 +132,9 @@ body {
 }
 .home .flex-container .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-    gap: 3rem;
-    margin: 1rem 7rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 2rem;
+    margin: 1rem 3rem 0;
     justify-content: center;
     place-items: center center;
 }
