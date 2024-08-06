@@ -128,7 +128,7 @@ body {
 }
 .home .flex-container .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
     gap: 5rem;
     margin: 4rem;
     justify-content: center;
@@ -482,8 +482,9 @@ body {
         font-size: 65%;
     }
     .simply-countdown>.simply-section {
+        scale: 70%;
         padding: 40px;
-        margin: 5px;
+        margin: 0;
     }
     .mynavbar .nav-link {
         font-size: 1.2rem;

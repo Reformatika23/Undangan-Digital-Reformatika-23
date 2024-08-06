@@ -1,7 +1,10 @@
 .simply-countdown {
     overflow: hidden;
-    display: table;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(.5rem, 1fr));
+    gap: .1rem;
     font-family: 'Arial', sans-serif;
+    justify-content: center;
     margin: auto;
 }
 
